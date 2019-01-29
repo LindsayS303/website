@@ -23,9 +23,6 @@ layout: default
          <li class="nav-item">
            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
          </li>
-         <li class="nav-item">
-           <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-         </li>
        </ul>
      </div>
    </div>
@@ -55,19 +52,24 @@ layout: default
          <span class="fa-stack fa-4x">
            <i class="fas fa-shopping-cart fa-stack-1x text-primary"></i>
          </span>
-         <h4 class="service-heading">Sewing</h4>
-         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+         <h4 class="service-heading">Custom Sewing</h4>
+         <p class="text-muted">
+           I work directly with you to design and create your custom makes. Whether it be home decor or clothing, together we can tackle something special.You can bring a pattern and fabric or I can source both for you. The customer must purchase a pattern or we can come up with something original. The customer must purchase the pattern from the designer or a retailer. Bring your ideas and inspirations and we will discuss all of your options!
+         </p>
        </div>
        <div class="col-md-6">
          <span class="fa-stack fa-4x">
            <i class="fas fa-laptop fa-stack-1x text-primary"></i>
          </span>
          <h4 class="service-heading">Classes</h4>
-         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+         <p class="text-muted">
+          I currently offer sewing classes! We can work one on one or have a fun group workshop!  Classes are for all skill levels, whether you have no idea how to thread a sewing machine or just need to learn some tricks of the trade, we can customize classes for you.
+         </p>
        </div>
      </div>
    </div>
  </section>
+
 
  <!-- Portfolio Grid -->
  <section class="bg-light" id="portfolio">
@@ -79,90 +81,18 @@ layout: default
        </div>
      </div>
      <div class="row">
-       <div class="col-md-4 col-sm-6 portfolio-item">
-         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-           <div class="portfolio-hover">
-             <div class="portfolio-hover-content">
-               <i class="fas fa-plus fa-3x"></i>
-             </div>
-           </div>
-           <img class="img-fluid" src="img/portfolio/002-thumbnail.jpg" alt="">
-         </a>
-         <div class="portfolio-caption">
-           <h4>Threads</h4>
-           <p class="text-muted">Illustration</p>
-         </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-           <div class="portfolio-hover">
-             <div class="portfolio-hover-content">
-               <i class="fas fa-plus fa-3x"></i>
-             </div>
-           </div>
-           <img class="img-fluid" src="img/portfolio/003-thumbnail.jpg" alt="">
-         </a>
-         <div class="portfolio-caption">
-           <h4>Explore</h4>
-           <p class="text-muted">Graphic Design</p>
-         </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-           <div class="portfolio-hover">
-             <div class="portfolio-hover-content">
-               <i class="fas fa-plus fa-3x"></i>
-             </div>
-           </div>
-           <img class="img-fluid" src="img/portfolio/004-thumbnail.jpg" alt="">
-         </a>
-         <div class="portfolio-caption">
-           <h4>Finish</h4>
-           <p class="text-muted">Identity</p>
-         </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-           <div class="portfolio-hover">
-             <div class="portfolio-hover-content">
-               <i class="fas fa-plus fa-3x"></i>
-             </div>
-           </div>
-           <img class="img-fluid" src="img/portfolio/006-thumbnail.jpg" alt="">
-         </a>
-         <div class="portfolio-caption">
-           <h4>Lines</h4>
-           <p class="text-muted">Branding</p>
-         </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-           <div class="portfolio-hover">
-             <div class="portfolio-hover-content">
-               <i class="fas fa-plus fa-3x"></i>
-             </div>
-           </div>
-           <img class="img-fluid" src="img/portfolio/021-thumbnail.jpg" alt="">
-         </a>
-         <div class="portfolio-caption">
-           <h4>Southwest</h4>
-           <p class="text-muted">Website Design</p>
-         </div>
-       </div>
-       <div class="col-md-4 col-sm-6 portfolio-item">
-         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-           <div class="portfolio-hover">
-             <div class="portfolio-hover-content">
-               <i class="fas fa-plus fa-3x"></i>
-             </div>
-           </div>
-           <img class="img-fluid" src="img/portfolio/027-thumbnail.jpg" alt="">
-         </a>
-         <div class="portfolio-caption">
-           <h4>Window</h4>
-           <p class="text-muted">Photography</p>
-         </div>
-       </div>
+       {% comment %}
+       {% include portfolio/1thumbnail.html %}
+       {% include portfolio/2thumbnail.html %}
+       {% include portfolio/3thumbnail.html %}
+       {% endcomment %}
+
+       {% include portfolio/4thumbnail.html %}
+       {% include portfolio/5thumbnail.html %}
+
+       {% comment %}
+       {% include portfolio/6thumbnail.html %}
+       {% endcomment %}
      </div>
    </div>
  </section>
@@ -173,370 +103,54 @@ layout: default
      <div class="row">
        <div class="col-lg-12 text-center">
          <h2 class="section-heading text-uppercase">About</h2>
-         <h3 class="section-subheading text-muted">[business name] is about fifteen years in the making. I’m Lindsay Schmidt, the owner and sewist (that’s what all the cook kids are saying these days) at [business name]. My grandmother taught me to sew as a child, I would sit under her quilting frame with her fabric scraps and a needle and thread and create something, pretty hideous usually, of my own. As a young adult I started making bags and quilts and shortly after that began working at a bridal shop as a seamstress. I learned so many tricks of the trade while working there, not realizing at the time how valuable those lessons would be. I left the bridal shop to take an office job, where I stayed in that field for twelve years. I continued to sew occasionally and always wanted to branch out and have a business of my own. Finally in 2017 I began to focus on my sewing and creative work again. I took on some contract work as a quilter and began to realize again how much I love working with my hands. [business name] is my way of keeping the creativity flowing and also providing lessons for those who are also interested in diving into the sewing world, it can be so rewarding to see your idea come to fruition. Can’t wait to sew with you.</h3>
+         <h3 class="section-subheading text-muted">
+
+           Hillside Handmade is a custom sewing studio. It’s also about fifteen years in the making. I’m Lindsay Schmidt, the owner and sewist (that’s what all the cool kids are saying these days) at Hillside Handmade. My grandmother taught me to sew as a child, I would sit under her quilting frame with her fabric scraps and a needle and thread and create something, pretty hideous usually, of my own. As a young adult I started making bags and quilts and shortly after that began working at a bridal shop as a seamstress. I learned so many tricks of the trade while working there, not realizing at the time how valuable those lessons would be. I left the bridal shop to take an office job, where I stayed in that field for twelve years. I continued to sew occasionally and always wanted to branch out and have a business of my own. Finally in 2017 I began to focus on my sewing and creative work again. I took on some contract work as a quilter for a modern quilting company, Vacilando Quilting Co., and began to realize again how much I love working with my hands. Hillside Handmade is my way of keeping the creativity flowing and also providing lessons for those who are also interested in diving into the sewing world, it can be so rewarding to see your idea come to fruition. Can’t wait to sew with you!
+
        </div>
      </div>
   </div>
  </section>
 
  <!-- Team -->
- <section class="bg-light" id="team">
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-12 text-center">
-         <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-         <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-sm-4">
-         <div class="team-member">
-           <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-           <h4>Larry Parker</h4>
-           <p class="text-muted">Lead Marketer</p>
-           <ul class="list-inline social-buttons">
-             <li class="list-inline-item">
-               <a href="#">
-                 <i class="fab fa-twitter"></i>
-               </a>
-             </li>
-             <li class="list-inline-item">
-               <a href="#">
-                 <i class="fab fa-facebook-f"></i>
-               </a>
-             </li>
-             <li class="list-inline-item">
-               <a href="#">
-                 <i class="fab fa-linkedin-in"></i>
-               </a>
-             </li>
-           </ul>
-         </div>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-lg-8 mx-auto text-center">
-         <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-       </div>
-     </div>
-   </div>
- </section>
+ {% include team.html %}
 
  <!-- Clients -->
  <section class="py-5">
    <div class="container">
      <div class="row">
-       <div class="col-md-3 col-sm-6">
-         <a href="#">
-           <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+       <div class="col-md-5 col-sm-3"></div>
+       <div class="col-md-2 col-sm-3">
+         <a href="https://www.vacilandoquilting.co/">
+           <img class="img-fluid d-block mx-auto" src="img/logos/static1.squarespace.png" alt="">
          </a>
        </div>
-       <div class="col-md-3 col-sm-6">
-         <a href="#">
-           <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-         </a>
-       </div>
-       <div class="col-md-3 col-sm-6">
-         <a href="#">
-           <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-         </a>
-       </div>
-       <div class="col-md-3 col-sm-6">
-         <a href="#">
-           <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-         </a>
-       </div>
+       <div class="col-md-5 col-sm-3"></div>
+
+
      </div>
    </div>
  </section>
 
- <!-- Contact -->
- <section id="contact">
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-12 text-center">
-         <h2 class="section-heading text-uppercase">Contact Us</h2>
-         <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-lg-12">
-         <form id="contactForm" name="sentMessage" novalidate="novalidate">
-           <div class="row">
-             <div class="col-md-6">
-               <div class="form-group">
-                 <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
-                 <p class="help-block text-danger"></p>
-               </div>
-               <div class="form-group">
-                 <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
-                 <p class="help-block text-danger"></p>
-               </div>
-               <div class="form-group">
-                 <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
-                 <p class="help-block text-danger"></p>
-               </div>
-             </div>
-             <div class="col-md-6">
-               <div class="form-group">
-                 <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                 <p class="help-block text-danger"></p>
-               </div>
-             </div>
-             <div class="clearfix"></div>
-             <div class="col-lg-12 text-center">
-               <div id="success"></div>
-               <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-             </div>
-           </div>
-         </form>
-       </div>
-     </div>
-   </div>
- </section>
 
  <!-- Footer -->
  <footer>
    <div class="container">
      <div class="row">
+       <div class="col-md-4"></div>
        <div class="col-md-4">
-         <span class="copyright">Copyright &copy; Your Website 2018</span>
+         <span class="copyright">Copyright &copy; Hillside Handmade 2019</span>
        </div>
-       <div class="col-md-4">
-         <ul class="list-inline social-buttons">
-           <li class="list-inline-item">
-             <a href="#">
-               <i class="fab fa-twitter"></i>
-             </a>
-           </li>
-           <li class="list-inline-item">
-             <a href="#">
-               <i class="fab fa-facebook-f"></i>
-             </a>
-           </li>
-           <li class="list-inline-item">
-             <a href="#">
-               <i class="fab fa-linkedin-in"></i>
-             </a>
-           </li>
-         </ul>
-       </div>
-       <div class="col-md-4">
-         <ul class="list-inline quicklinks">
-           <li class="list-inline-item">
-             <a href="#">Privacy Policy</a>
-           </li>
-           <li class="list-inline-item">
-             <a href="#">Terms of Use</a>
-           </li>
-         </ul>
-       </div>
+       <div class="col-md-4"></div>
      </div>
    </div>
  </footer>
 
  <!-- Portfolio Modals -->
 
- <!-- Modal 1 -->
- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="close-modal" data-dismiss="modal">
-         <div class="lr">
-           <div class="rl"></div>
-         </div>
-       </div>
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-8 mx-auto">
-             <div class="modal-body">
-               <!-- Project Details Go Here -->
-               <h2 class="text-uppercase">Project Name</h2>
-               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-               <img class="img-fluid d-block mx-auto" src="img/portfolio/002.jpg" alt="">
-               <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-               <ul class="list-inline">
-                 <li>Date: January 2017</li>
-                 <li>Client: Threads</li>
-                 <li>Category: Illustration</li>
-               </ul>
-               <button class="btn btn-primary" data-dismiss="modal" type="button">
-                 <i class="fas fa-times"></i>
-                 Close Project</button>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-
- <!-- Modal 2 -->
- <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="close-modal" data-dismiss="modal">
-         <div class="lr">
-           <div class="rl"></div>
-         </div>
-       </div>
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-8 mx-auto">
-             <div class="modal-body">
-               <!-- Project Details Go Here -->
-               <h2 class="text-uppercase">Project Name</h2>
-               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-               <img class="img-fluid d-block mx-auto" src="img/portfolio/003.jpg" alt="">
-               <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-               <ul class="list-inline">
-                 <li>Date: January 2017</li>
-                 <li>Client: Explore</li>
-                 <li>Category: Graphic Design</li>
-               </ul>
-               <button class="btn btn-primary" data-dismiss="modal" type="button">
-                 <i class="fas fa-times"></i>
-                 Close Project</button>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-
- <!-- Modal 3 -->
- <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="close-modal" data-dismiss="modal">
-         <div class="lr">
-           <div class="rl"></div>
-         </div>
-       </div>
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-8 mx-auto">
-             <div class="modal-body">
-               <!-- Project Details Go Here -->
-               <h2 class="text-uppercase">Project Name</h2>
-               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-               <img class="img-fluid d-block mx-auto" src="img/portfolio/004.jpg" alt="">
-               <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-               <ul class="list-inline">
-                 <li>Date: January 2017</li>
-                 <li>Client: Finish</li>
-                 <li>Category: Identity</li>
-               </ul>
-               <button class="btn btn-primary" data-dismiss="modal" type="button">
-                 <i class="fas fa-times"></i>
-                 Close Project</button>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-
- <!-- Modal 4 -->
- <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="close-modal" data-dismiss="modal">
-         <div class="lr">
-           <div class="rl"></div>
-         </div>
-       </div>
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-8 mx-auto">
-             <div class="modal-body">
-               <!-- Project Details Go Here -->
-               <h2 class="text-uppercase">Project Name</h2>
-               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-               <img class="img-fluid d-block mx-auto" src="img/portfolio/006.jpg" alt="">
-               <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-               <ul class="list-inline">
-                 <li>Date: January 2017</li>
-                 <li>Client: Lines</li>
-                 <li>Category: Branding</li>
-               </ul>
-               <button class="btn btn-primary" data-dismiss="modal" type="button">
-                 <i class="fas fa-times"></i>
-                 Close Project</button>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-
- <!-- Modal 5 -->
- <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="close-modal" data-dismiss="modal">
-         <div class="lr">
-           <div class="rl"></div>
-         </div>
-       </div>
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-8 mx-auto">
-             <div class="modal-body">
-               <!-- Project Details Go Here -->
-               <h2 class="text-uppercase">Project Name</h2>
-               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-               <img class="img-fluid d-block mx-auto" src="img/portfolio/021.jpg" alt="">
-               <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-               <ul class="list-inline">
-                 <li>Date: January 2017</li>
-                 <li>Client: Southwest</li>
-                 <li>Category: Website Design</li>
-               </ul>
-               <button class="btn btn-primary" data-dismiss="modal" type="button">
-                 <i class="fas fa-times"></i>
-                 Close Project</button>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-
- <!-- Modal 6 -->
- <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="close-modal" data-dismiss="modal">
-         <div class="lr">
-           <div class="rl"></div>
-         </div>
-       </div>
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-8 mx-auto">
-             <div class="modal-body">
-               <!-- Project Details Go Here -->
-               <h2 class="text-uppercase">Project Name</h2>
-               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-               <img class="img-fluid d-block mx-auto" src="img/portfolio/027.jpg" alt="">
-               <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-               <ul class="list-inline">
-                 <li>Date: January 2017</li>
-                 <li>Client: Window</li>
-                 <li>Category: Photography</li>
-               </ul>
-               <button class="btn btn-primary" data-dismiss="modal" type="button">
-                 <i class="fas fa-times"></i>
-                 Close Project</button>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+ {% include portfolio/1modal.html %}
+ {% include portfolio/2modal.html %}
+ {% include portfolio/3modal.html %}
+ {% include portfolio/4modal.html %}
+ {% include portfolio/5modal.html %}
+ {% include portfolio/6modal.html %}
