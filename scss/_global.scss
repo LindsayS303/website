@@ -2,6 +2,7 @@
 body {
   overflow-x: hidden;
   @include body-font;
+  color: $linds-1 !important;
 }
 
 p {
@@ -9,14 +10,14 @@ p {
 }
 
 a {
-  color: $primary;
+  color: $linds-3;
   &:hover {
-    color: darken($primary, 10%);
+    color: darken($linds-3, 10%);
   }
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $linds-4 !important;
 }
 
 h1,
@@ -80,12 +81,12 @@ section {
 
 // Highlight color customization
 ::-moz-selection {
-  background: $primary;
+  background: $linds-4;
   text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
+  background: $linds-4;
   text-shadow: none;
 }
 

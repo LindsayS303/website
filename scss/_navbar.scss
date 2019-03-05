@@ -1,24 +1,24 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $gray-900;
+  background-color: $linds-2;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: white;
+    color: $linds-4;
     border: 0;
-    background-color: $primary;
+    background-color: $linds-3;
     @include lindsay-heading;
   }
   .navbar-brand {
-    color: $primary;
+    color: $linds-3;
     @include script-font;
     &.active,
     &:active,
     &:focus,
     &:hover {
-      color: darken($primary, 10%);
+      color: darken($linds-3, 10%);
     }
   }
   .navbar-nav {
@@ -32,7 +32,7 @@
         @include lindsay-heading;
         &.active,
         &:hover {
-          color: $primary;
+          color: $linds-4;
         }
       }
     }
@@ -63,7 +63,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: $linds-2;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
