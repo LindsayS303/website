@@ -17,7 +17,7 @@ a {
 }
 
 .text-primary {
-  color: $linds-4 !important;
+  color: $linds-3 !important;
 }
 
 h1,
@@ -64,13 +64,13 @@ section {
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  background-color: $linds-3;
+  border-color: $linds-3;
   &:active,
   &:focus,
   &:hover {
-    background-color: darken($primary, 7.5%) !important;
-    border-color: darken($primary, 7.5%) !important;
+    background-color: darken($linds-3, 7.5%) !important;
+    border-color: darken($linds-3, 7.5%) !important;
     color: white;
   }
   &:active,
