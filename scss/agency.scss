@@ -12,3 +12,7 @@
 @import "team.scss";
 @import "contact.scss";
 @import "footer.scss";
+
+dialog.eds-modal__body {
+  max-height: 550px;
+}
